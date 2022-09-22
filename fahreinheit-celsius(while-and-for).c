@@ -5,6 +5,7 @@ for f = 0, 20, ..., 300 */
 
 main()
 {
+    /*Using a while loop to print out Fahrenheit-Celsius table */
     int lower, upper, step;
     float fahr, celsius;
     lower = 0; /* lower limit of temperature table */
@@ -17,4 +18,13 @@ main()
         printf("%4.0f %6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
-}
+
+    printf(" \n");
+
+    /*Using a for loop to print out Fahrenheit-Celsius table */
+    int fah;
+
+    for (fah = 0; fah <= 300; fah = fah + 20){
+        printf("%4d %6.1f\n", fah, (5.0/9.0)*(fah-32));
+    }
+}   
